@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- imporatar css-->
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <!-- importar google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- importar google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- importar google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--importar iconos de boxicoins-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <body class="seccion">        
+        <section class="login">
+          <div class="contenedor-login">
+            <div class="formulario">
+              <form action="#" method="post">
+                <h2>Registrar Usuario</h2>
+    
+                <div class="input-contenedor">
+                  <i class="bx bxs-envelope"></i>
+                  <input type="email" name="email" id="email" required/>
+                  <label for="#">Email</label>
+                </div>
+
+                <div class="input-contenedor">
+                    <i class='bx bxs-user'></i>
+                    <input type="text" name="username" id="username" required/>
+                    <label for="">Usuario</label>
+                </div>
+    
+                <div class="input-contenedor">
+                  <i class="bx bxs-lock-alt"></i>
+                  <input type="password" name="password" id="password" required />
+                  <label for="#"> Contraseña</label>
+                </div>
+    
+                <div class="input-contenedor">
+                    <i class="bx bxs-lock-alt"></i>
+                    <input type="password" name="password" id="password" required/>
+                    <label for=""> Confirmar Contraseña</label>
+                </div>
+
+                <div>
+                    <button class="boton-login">Registrar</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        {% if error %}
+            <p class="error h5"> {{error}} </p>
+        {% endif %}
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

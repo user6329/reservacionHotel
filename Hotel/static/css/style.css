@@ -1,0 +1,233 @@
+:root{
+  --cafe: #792a16;
+  --cafebajo: #9f371c;
+  --crema: #ddd19d;
+}
+
+
+body{
+  font-family: "imbue", serif;
+}
+h1,h2,h3,h4,h5,h6,p{
+  font-family: "imbue", serif;
+}
+
+.header {
+  background-image: url('../img/pisina2.jpg'); 
+  background-size: cover;
+  background-position: center;
+  color: #ffff; 
+  padding: 120px 0; 
+}
+
+.contenedor{
+  padding: 20px;
+  margin-top: 200px;
+
+}
+
+.abouts{
+  color: var(--cafebajo);
+}
+
+.btn-personalizado {
+  background-color: var(--cafebajo); /* Color de fondo */
+  color: #ffff; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor al pasar el ratón */
+}
+
+
+.btn-personalizado:hover {
+  background-color: var(--cafe); 
+  color: #ffff;
+}
+
+.carouselExampleSlidesOnly{
+  max-width: 100%;
+}
+
+img{
+  padding: 0;
+  margin: 10px;
+}
+.sombra-img{
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-overlay {
+  position: absolute; /* Establece la posición absoluta del botón */
+  top: 50%; /* Posiciona el botón en la mitad superior del contenedor */
+  left: 50%; /* Posiciona el botón en el centro horizontal del contenedor */
+  transform: translate(-50%, -50%); /* Centra el botón correctamente */
+  z-index: 1; /* Asegura que el botón esté encima de la imagen */
+}
+
+.btn-esquina {
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+}
+
+.container {
+  position: relative; 
+}
+
+footer {
+  background-color: var(--cafebajo);
+  color: #333; 
+  padding: 20px 0; 
+  text-align: center; 
+}
+
+/* pagina del login */
+
+.seccion{
+  background: url(../img/fondologin.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+
+}
+.login{
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 100vh;
+}
+
+.contenedor-login{
+  position: relative;
+  width: 400px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, .6);
+  height: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.contenedor-login h2{
+  font-size: 2.3rem;
+  color: #ffff;
+  text-align: center;
+
+}
+.input-contenedor{
+  position: relative;
+  margin: 30px 0;
+  width: 300px;
+  border-bottom: 2px solid #ffff;
+}
+
+.input-contenedor label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #ffff;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: .6s;
+  font-weight: bold;
+
+}
+
+input:focus ~ label,
+input:valid ~ label{
+  top: -5px;
+}
+
+.input-contenedor input{
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: -35px 0 5px;
+  color: #ffff;
+}
+
+.input-contenedor i{
+  position: absolute;
+  color: #ffff;
+  font-size: 1.6rem;
+  top: 19px;
+  right: 8px;
+
+}
+
+.olvidar{
+  margin: -15px 0 15px;
+  font-size: .9rem;
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+}
+
+.olvidar label input{
+  margin: 3px;
+
+}
+
+.olvidar label a {
+  color: #ffff;
+  text-decoration: none;
+  transition: .3s;
+  font-size: .9rem;
+}
+
+.boton-login{
+  width: 100%;
+  height: 45px;
+  border-radius: 40px;
+  background: #ffff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  transition: .4s;
+}
+
+.boton-login:hover{
+  opacity: .9;
+}
+
+.registrar{
+  font-size: .9rem;
+  color: #ffff;
+  text-align: center;
+  margin: 20px 0 10px;
+
+}
+
+.registrar p a{
+  text-decoration: none;
+  color: #ffff;
+  font-weight: bold;
+  transition: .3s;
+
+}
+
+.registrar p a:hover{
+  text-decoration: underline;
+}
+
+.error{
+  font-family: "imbue", serif;
+  color: red;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
